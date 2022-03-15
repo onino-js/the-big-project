@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <div className={cx("home")}>
       <iframe
+        title="who knows"
         id="ytplayer"
         // type="text/html"
         width="640"
