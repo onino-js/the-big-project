@@ -1,0 +1,25 @@
+$central-btn-size: 100px;
+
+.home {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background: url(./../../assets/images/whirl.webp) no-repeat center center
+    fixed;
+  background-size: 100% 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: $central-btn-size;
+    height: $central-btn-size;
+    text-align: center;
+    cursor: progress;
+    :hover {
+      color: transparent;
+    }
+  }
+}
