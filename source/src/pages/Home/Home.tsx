@@ -4,6 +4,7 @@ import classnames from "classnames/bind";
 
 // We use ClassNames In the memory of M. the deaf goose and his carriage
 const cx = classnames.bind(styles);
+// May it works one day
 
 const Home = () => {
   return (
