@@ -12,11 +12,12 @@ const Home = () => {
       <iframe
         title="who knows"
         id="ytplayer"
-        // type="text/html"
+        //@ts-ignore
+        type="text/html"
         width="640"
         height="360"
         src="https://www.youtube.com/embed/v=FOMZ_eHUCHE?autoplay=1"
-        //  frameborder="0"
+        frameborder="0"
       />
     </div>
   );
