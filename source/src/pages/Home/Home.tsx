@@ -15,7 +15,7 @@ const Home = () => {
         // type="text/html"
         width="640"
         height="360"
-        src="http://www.youtube.com/embed/v=FOMZ_eHUCHE?autoplay=1"
+        src="https://www.youtube.com/embed/v=FOMZ_eHUCHE?autoplay=1"
         //  frameborder="0"
       />
     </div>
