@@ -7,14 +7,28 @@ import pic4 from "./../../assets/images/pictograms/pseudAnonym4.png";
 import pic5 from "./../../assets/images/pictograms/pseudAnonym5.png";
 import pic6 from "./../../assets/images/pictograms/pseudAnonym6.png";
 import pic7 from "./../../assets/images/pictograms/pseudAnonym7.png";
-import whirl from "./../../assets/images/whirl.webp";
-import opossum from "./../../assets/images/opossum.webp";
-import jbTest from "./../../assets/images/jb-test.png";
+import whirl from "./../../assets/images/whirl-paint.webp";
+import opossum from "./../../assets/images/opossum_waves.webp";
+import jbTest from "./../../assets/images/jb-007.webp";
+import { useEffect } from "react";
+import { Howl } from "howler";
 
 // We use ClassNames In the memory of M. the deaf goose and his carriage
 const cx = classnames.bind(styles);
 
 const Home = () => {
+  useEffect(() => {
+    playTheme();
+  }, []);
+  const playTheme = () => {
+    let sound = new Howl({
+      src: ["./../../assets/music/theme.mp3"],
+      autoplay: true,
+    });
+
+    sound.play();
+    console.log(sound);
+  };
   const onHeaderClick = () => {
     document.getElementById("journey-begin")!.scrollIntoView({
       behavior: "smooth",
@@ -30,12 +44,13 @@ const Home = () => {
       <header>
         <img src={whirl} alt="electromenagé" onClick={onHeaderClick} />
       </header>
-      <section id="journey-begin">
+      <section className={cx("journey-begin")} id={"journey-begin"}>
         <h3>Hello Wellcomer ! Who are you know ?</h3>
         <p>
-          We are a collision of artists who stroke the beat inadvertetly to
-          contract a rare melody. Enjoy ! denouce and debounce ! Certainly balls
-          allways roll down from top to bottom. <br />
+          We are a collision of artists who stroke the beat inadvertetly and
+          contracted a rare melody. <br />
+          Enjoy ! denouce and debounce ! <br />
+          Certainly balls allways roll down from top to bottom. <br />
           The trust is one thing and the others are rather's layers king. In any
           kind of logic you'll find piece of peaces and facilities. What we have
           is precious. We have, we'll always have what it takes and makes to
@@ -79,7 +94,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className={cx("jb")}>
+      <div className={cx("jb-007")}>
         <img src={jbTest} alt="jb" />
       </div>
       <div>
@@ -154,8 +169,6 @@ const Home = () => {
           fullfill your wishes <br /> You'll see the Dragon flying in the air
         </p>
       </div> */}
-      <br />
-      <br />
       <br />
       <footer>
         <img src={opossum} alt="hollystring" onClick={onFooterClick} />

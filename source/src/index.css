@@ -14,4 +14,7 @@ code {
     monospace;
 }
 #root {
+  max-width: 999px;
+  margin: 0 auto;
+  overflow-x: visible;
 }

@@ -4,21 +4,27 @@ $central-btn-size: 100px;
 
 .home {
   font-family: "Pacifico", cursive;
-  overflow-x: hidden;
   position: relative;
+  overflow-x: visible;
+  overflow-y: inherit;
   header {
     position: relative;
     img {
       width: 100%;
-      // position: absolute;
     }
+  }
+  .journey-begin {
+    padding-top: 2rem;
   }
   footer {
+    display: flex;
+    margin-bottom: 3rem;
     img {
-      width: 100%;
+      max-width: 666px;
+      margin: auto;
     }
   }
-  .jb {
+  .jb-007 {
     height: 280px;
     z-index: -1;
     display: flex;
@@ -82,7 +88,15 @@ $central-btn-size: 100px;
 
 @media (max-width: 600px) {
   .home {
-    .jb {
+    width: 100vw;
+    overflow: hidden;
+    footer {
+      img {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+    .jb-007 {
       height: 150px;
       z-index: -1;
       display: flex;
@@ -90,7 +104,7 @@ $central-btn-size: 100px;
       img {
         margin: auto;
         position: relative;
-        transform: translate(0px, -200px);
+        transform: translate(0px, -240px);
         max-width: 400px;
       }
     }
