@@ -12,6 +12,7 @@ import opossum from "./../../assets/images/opossum_waves.webp";
 import jbTest from "./../../assets/images/jb-007.webp";
 import { useEffect } from "react";
 import { Howl } from "howler";
+import { randomSites } from "../../assets/random-sites";
 
 // We use ClassNames In the memory of M. the deaf goose and his carriage
 const cx = classnames.bind(styles);
@@ -37,7 +38,14 @@ const Home = () => {
     });
   };
   const onFooterClick = () => {
-    alert("tg");
+    randomSites.shift();
+    var item =
+      randomSites[Math.floor(Math.random() * (randomSites.length - 1))];
+    if (window.confirm(item.message)) {
+      window.location.replace(item.url);
+    } else {
+      window.location.replace(item.uri);
+    }
   };
   return (
     <div className={cx("home")}>
