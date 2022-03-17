@@ -11,6 +11,7 @@ $central-btn-size: 100px;
     position: relative;
     img {
       width: 100%;
+      cursor: wait;
     }
   }
   .journey-begin {
@@ -20,6 +21,7 @@ $central-btn-size: 100px;
     display: flex;
     margin-bottom: 3rem;
     img {
+      cursor: cell;
       max-width: 666px;
       margin: auto;
     }
@@ -34,6 +36,7 @@ $central-btn-size: 100px;
       position: relative;
       transform: translate(0px, -200px);
       max-width: 500px;
+      cursor: crosshair;
     }
   }
   h3 {

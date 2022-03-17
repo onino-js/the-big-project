@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@types/howler": "^2.2.6",
     "node-sass": "^7.0.1"
   }
 }
