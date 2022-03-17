@@ -137,7 +137,6 @@ const Home = () => {
           It will be good enough will be the Farce
         </p>
       </div>
-      <div className={cx("divider")}>***</div>
       {/* <div>
         <p className="interlude">
           My small channel I love, all begins with the Saints

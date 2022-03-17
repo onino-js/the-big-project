@@ -82,6 +82,18 @@ $central-btn-size: 100px;
 
 @media (max-width: 600px) {
   .home {
+    .jb {
+      height: 150px;
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+      img {
+        margin: auto;
+        position: relative;
+        transform: translate(0px, -200px);
+        max-width: 400px;
+      }
+    }
     h3 {
       font-family: "Pacifico", cursive;
       font-size: 1.2rem;
