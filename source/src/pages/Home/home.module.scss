@@ -5,7 +5,7 @@ $central-btn-size: 100px;
 .home {
   font-family: "Pacifico", cursive;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: visible;
   overflow-y: inherit;
   header {
     position: relative;
@@ -13,9 +13,6 @@ $central-btn-size: 100px;
       width: 100%;
       cursor: wait;
     }
-  }
-  .journey-begin {
-    padding-top: 2rem;
   }
   footer {
     display: flex;
@@ -27,16 +24,16 @@ $central-btn-size: 100px;
     }
   }
   .jb-007 {
-    height: 280px;
     z-index: -1;
     display: flex;
     justify-content: center;
     img {
       margin: auto;
       position: relative;
-      transform: translate(0px, -200px);
+      // transform: translate(0px, -200px);
       max-width: 500px;
       cursor: crosshair;
+      border-radius: 100px;
     }
   }
   h3 {
@@ -66,19 +63,6 @@ $central-btn-size: 100px;
       img {
         max-width: 200px;
       }
-    }
-  }
-
-  button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    width: $central-btn-size;
-    height: $central-btn-size;
-    text-align: center;
-    cursor: progress;
-    :hover {
-      color: transparent;
     }
   }
 }
