@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/"
+    },
+    {
+      "route": "/piece",
+      "rewrite": "/"
+    },
+    {
+      "route": "/about-we",
+      "rewrite": "/"
+    }
+  ]
+}
