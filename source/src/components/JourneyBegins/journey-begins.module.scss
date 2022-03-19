@@ -1,0 +1,11 @@
+.journey-begins {
+  padding-top: 2rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+@media (max-width: 600px) {
+  .journey-begins {
+    padding: 0rem 2rem;
+  }
+}

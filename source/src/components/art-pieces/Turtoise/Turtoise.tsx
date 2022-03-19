@@ -6,7 +6,7 @@ const cx = classnames.bind(styles);
 const Turtoise = () => {
   return (
     <div className={cx("turtoise")}>
-      <h3>once upon a tortoise</h3>
+      <h1>once upon a tortoise</h1>
       <p>
         All I need is one <br />
         one tortoise is enough <br />

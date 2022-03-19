@@ -3,15 +3,10 @@
 $central-btn-size: 100px;
 
 .home {
-  font-family: "Pacifico", cursive;
-  position: relative;
-  overflow-x: visible;
-  overflow-y: inherit;
   header {
-    position: relative;
     img {
       width: 100%;
-      cursor: wait;
+      cursor: pointer;
     }
   }
   footer {
@@ -19,37 +14,17 @@ $central-btn-size: 100px;
     margin-bottom: 3rem;
     img {
       cursor: cell;
-      max-width: 666px;
+      max-width: 444px;
       margin: auto;
     }
   }
   .jb-007 {
-    z-index: -1;
     display: flex;
     justify-content: center;
     img {
-      margin: auto;
-      position: relative;
-      // transform: translate(0px, -200px);
       max-width: 500px;
       cursor: crosshair;
-      border-radius: 100px;
     }
-  }
-  h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-    padding: 1rem 3rem;
-    max-width: 850px;
-  }
-  p {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: auto;
-    padding: 1rem 3rem;
-    font-weight: lighter;
-    max-width: 850px;
   }
   .pictos {
     display: flex;
@@ -67,79 +42,29 @@ $central-btn-size: 100px;
   }
 }
 
-.divider {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0rem;
-}
-
 @media (max-width: 600px) {
   .home {
     width: 100vw;
     overflow: hidden;
     footer {
       img {
-        max-width: 100%;
-        margin: auto;
+        max-width: 350px;
       }
     }
     .jb-007 {
-      height: 150px;
-      z-index: -1;
-      display: flex;
-      justify-content: center;
       img {
-        margin: auto;
-        position: relative;
-        transform: translate(0px, -240px);
         max-width: 400px;
       }
     }
-    h3 {
-      font-family: "Pacifico", cursive;
-      font-size: 1.2rem;
-      text-align: center;
-      margin: auto;
-      padding: 1rem 3rem;
-      max-width: 850px;
-    }
-    p {
-      font-family: "Pacifico", cursive;
-      font-size: 1rem;
-      padding: 1rem;
-    }
     .pictos {
-      display: flex;
-      flex-wrap: wrap;
       column-gap: 0.5rem;
-      justify-content: center;
       padding: 0.5rem 0rem;
       a {
         max-width: 70px;
-        cursor: pointer;
         img {
           max-width: 70px;
         }
       }
     }
-
-    button {
-      background-color: transparent;
-      border: none;
-      color: white;
-      width: $central-btn-size;
-      height: $central-btn-size;
-      text-align: center;
-      cursor: progress;
-      :hover {
-        color: transparent;
-      }
-    }
-  }
-
-  .divider {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0rem;
   }
 }

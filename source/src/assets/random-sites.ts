@@ -1,4 +1,6 @@
-export const randomSites = [
+import { IrandomSite } from "../models/random-site.model";
+
+export const randomSites: IrandomSite[] = [
   {
     url: "IMPORTANT",
     uri: "To sneaky little rats who read those lines !",
