@@ -10,8 +10,8 @@ $central-btn-size: 100px;
   footer {
     display: flex;
     margin-bottom: 3rem;
+    cursor: pointer;
     img {
-      cursor: cell;
       max-width: 444px;
       margin: auto;
     }
@@ -22,20 +22,6 @@ $central-btn-size: 100px;
     img {
       max-width: 500px;
       cursor: crosshair;
-    }
-  }
-  .pictos {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 3rem;
-    justify-content: center;
-    padding: 3rem 0rem;
-    a {
-      max-width: 200px;
-      cursor: pointer;
-      img {
-        max-width: 200px;
-      }
     }
   }
 }

@@ -1,5 +1,5 @@
-import { IrandomSite } from "./../models/random-site.model";
-import { randomSites } from "./../assets/random-sites";
+import { IrandomSite } from "../models/random-site.model";
+import { randomSites } from "../assets/random-sites";
 
 interface ITSPastaProps {
   welcomeElementId: string;

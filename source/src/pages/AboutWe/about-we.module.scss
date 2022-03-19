@@ -1,0 +1,16 @@
+.about-we {
+  text-align: center;
+  .pictoanonym-grid {
+    display: grid;
+    overflow-y: auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: max-content;
+    grid-auto-flow: dense;
+    justify-items: center;
+    img {
+      max-width: 200px;
+    }
+  }
+}

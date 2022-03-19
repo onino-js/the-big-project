@@ -6,16 +6,6 @@ import pic5 from "./pseudAnonym5.png";
 import pic6 from "./pseudAnonym6.png";
 import pic7 from "./pseudAnonym7.png";
 
-export const pictoIndex = [
-  pic1,
-  pic2,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
-  pic7,
-  pic2,
-  pic3,
-];
+export const pictoIndex = [pic3, pic4, pic5, pic2, pic6, pic7];
 
 export default pictoIndex;
