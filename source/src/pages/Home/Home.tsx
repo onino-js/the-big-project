@@ -9,9 +9,10 @@ import { randomSites } from "../../assets/random-sites";
 import Modal from "../../components/Modal/Modal";
 import AbsoluteCertainty from "../../assets/poems/AbolusteCertainty/AbsoluteCertainty";
 import { SPY_NAME } from "../../constants/site.constants";
-import { poemList } from "../../assets/poems/poem-list";
+import { poemIndex } from "../../assets/poems/poem-list";
 import Carousel from "../../components/Carousel/Carousel";
 import Wellcome from "../../components/Welcome/Wellcome";
+import Turtoise from "../../assets/poems/Turtoise/Turtoise";
 
 // We use ClassNames In the memory of M. the deaf goose and his carriage
 const cx = classnames.bind(styles);
@@ -21,11 +22,30 @@ interface IHomeState {
   showEphemere: boolean;
   poemIndex: number;
 }
+
 const Home = () => {
   useEffect(() => {
-    playTheme();
-    addJBClickListener();
+    const el = document.getElementById(SPY_NAME);
+    let sound = new Howl({
+      src: ["theme.mp3"],
+      // autoplay: true,
+    });
+    // sound.play();
+    const listener = (e: MouseEvent) => {
+      var x = e.pageX - el!.offsetLeft;
+      var y = e.pageY - el!.offsetTop;
+      const msg = `We got your point number NBH${x}${Math.abs(y)}`;
+      alert(msg);
+      setState((state) => ({ ...state, showEphemere: false, poemIndex: 0 }));
+      window.scrollTo(0, 1000);
+    };
+    el!.addEventListener("click", listener);
+    return () => {
+      document.removeEventListener("click", listener);
+    };
   }, []);
+
+  const findTheWay = () => {};
 
   const [state, setState] = useState<IHomeState>({
     showSmallPoem: false,
@@ -33,25 +53,6 @@ const Home = () => {
     poemIndex: -1,
   });
 
-  const playTheme = () => {
-    let sound = new Howl({
-      src: ["./../../assets/music/theme.mp3"],
-      autoplay: true,
-    });
-
-    sound.play();
-  };
-
-  const addJBClickListener = () => {
-    const el = document.getElementById(SPY_NAME);
-    el!.addEventListener("click", (e: MouseEvent) => {
-      var x = e.pageX - el!.offsetLeft;
-      var y = e.pageY - el!.offsetTop;
-      const msg = `We got your point number NBH${x}${Math.abs(y)}`;
-      alert(msg);
-      setState((state) => ({ ...state, showEphemere: false, poemIndex: 0 }));
-    });
-  };
   const onHeaderClick = () => {
     document.getElementById("journey-begin")!.scrollIntoView({
       behavior: "smooth",
@@ -69,7 +70,10 @@ const Home = () => {
       window.location.replace(item.uri);
     }
   };
-  const Poem = poemList[state.poemIndex];
+  const queryParams = new URLSearchParams(window.location.search);
+  const poem = queryParams.get("poem");
+  //@ts-ignore
+  const Poem = poemIndex[poem || "gfy"].component;
   return (
     <div className={cx("home")}>
       {state.showEphemere && (
@@ -85,61 +89,7 @@ const Home = () => {
             <img id={SPY_NAME} src={jb007} alt="jb" />
           </div>
           <div className={cx("piece")}>
-            <>
-              <h3>once upon a tortoise</h3>
-              <p>
-                All I need is one <br />
-                one tortoise is enough <br />
-                Baby you got it wrong <br />
-                please turn your soul into folks
-              </p>
-              <p>
-                We are collusion, melody contracted <br />
-                The mind of young boy far a west
-              </p>
-              <p>
-                We are fusion, melody repeated… <br />
-                CleO has fever, and we turn in his head
-              </p>
-              <p>
-                We are a union, melody weighted ! <br />
-                Devs heads and the songs of sirens
-              </p>
-              <p>
-                We are completion, melody blended <br />
-                By the nil being highlighted
-              </p>
-              <p>
-                "Four living pillars that often lie."
-                <br />
-                "On top of the Tortoise galactic ride."
-                <br />
-                "Holy bath in the dessert you may find"
-              </p>
-              <p>
-                Witch is conspiration, melody hacked
-                <br />
-                Might us know everything. Solution for the rest
-              </p>
-              <p>
-                We are misconception, you are the problem <br />
-                Simple melody, that digs in our heads
-              </p>
-              <p>
-                Let’s break this chain, make it an dote <br />I beg you join we
-                in the Barbapapote
-              </p>
-              <p>We just melody and only you only got</p>
-              <p>
-                May you find your tortoise and go through the extreme
-                <br />
-                God will your sacrifice it might be rewarded <br />
-                <br />
-                Just for the livings and living for the justs <br />
-                prettiest of the meme to misleading emblem <br />
-                It will be good enough will be the Farce
-              </p>
-            </>
+            <Turtoise />
           </div>
         </>
       )}
