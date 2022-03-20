@@ -15,7 +15,6 @@ const JourneyBegins: React.FC<IJourneyBeginsProps> = ({ id = DEFAULT_ID }) => {
     <section className={cx("journey-begins")} id={id}>
       <h1>Hello Wellcomer !</h1>
       <NavLink to="about-we">
-        {" "}
         <h3>Who are you know ?</h3>
       </NavLink>
       <p>

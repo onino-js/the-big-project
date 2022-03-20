@@ -11,8 +11,6 @@ export const Piece: React.FC = () => (
     <div className={cx(SPY_NAME)}>
       <img id={SPY_NAME} src={jb007} alt="jb" />
     </div>
-    <Piece>
-      <Turtoise />
-    </Piece>
+    <Turtoise />
   </div>
 );

@@ -56,7 +56,7 @@ const Home = () => {
       <br />
       <br />
       <NavLink to="piece">
-        <Footer onClick={onFooterClick} />
+        <Footer />
       </NavLink>
     </>
   );
