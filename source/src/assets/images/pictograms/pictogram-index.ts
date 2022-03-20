@@ -1,4 +1,4 @@
-import pic1 from "./pseudAnonym1.png";
+// import pic1 from "./pseudAnonym1.png";
 import pic2 from "./pseudAnonym2.png";
 import pic3 from "./pseudAnonym3.png";
 import pic4 from "./pseudAnonym4.png";

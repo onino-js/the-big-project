@@ -10,7 +10,7 @@ export const AboutWe: React.FC = () => (
     <h2>Know here we are</h2>
     <div className={cx("pictoanonym-grid")}>
       {pictoIndex.map((d, i) => (
-        <img src={d} />
+        <img src={d} alt={`pictoanonym-${i}`} />
       ))}
     </div>
     <NavLink to="/">
