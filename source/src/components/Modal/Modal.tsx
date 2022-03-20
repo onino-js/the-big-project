@@ -6,7 +6,6 @@
  *
  * (c) Copyright by Boston team.
  **/
-import React from "react";
 import styles from "./modal.module.scss";
 import classnames from "classnames/bind";
 
