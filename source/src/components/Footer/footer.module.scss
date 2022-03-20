@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  img {
+    max-width: 444px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    img {
+      max-width: 350px;
+    }
+  }
+}

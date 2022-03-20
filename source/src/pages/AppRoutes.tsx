@@ -3,7 +3,7 @@ import { AboutWe } from "./AboutWe/AboutWe";
 import Home from "./Home/Home";
 import { Piece } from "./Piece/Piece";
 
-export const App = () => {
+export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
