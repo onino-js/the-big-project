@@ -14,4 +14,17 @@ code {
 #root {
   max-width: 999px;
   margin: 0 auto;
+  position: relative;
+}
+
+#breve-button {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url("./assets/styles/fonts/Indie_Flower/IndieFlower-Regular.ttf")
+    format("truetype");
 }

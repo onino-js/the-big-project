@@ -6,6 +6,7 @@ interface ITSPastaProps {
 }
 
 export class TSPasta {
+  static sample = (arr: any[]) => arr[Math.floor(Math.random() * arr.length)];
   public randomSites: IrandomSite[] = [];
   public welcomeElementId: string = "";
   constructor({ welcomeElementId }: ITSPastaProps) {

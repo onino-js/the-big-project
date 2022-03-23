@@ -1,3 +1,4 @@
 export type Iindividual = {
-  pseudoAnonym: any;
+  id: string;
+  pseudoAnonymUrl: string;
 };

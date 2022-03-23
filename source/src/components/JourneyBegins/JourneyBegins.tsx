@@ -29,6 +29,8 @@ const JourneyBegins: React.FC<IJourneyBeginsProps> = ({ id = DEFAULT_ID }) => {
         <br />
         Feel them and live it once for all.
       </p>
+      <NavLink to="inventory">To the inventory</NavLink>
+      <p>Or shuffle poetry by clicking below:</p>
     </section>
   );
 };

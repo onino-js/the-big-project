@@ -1,22 +1,13 @@
 import styles from "./absolute-certainty.module.scss";
 import classnames from "classnames/bind";
+import cercei from "./../../../assets/images/GOT.jpg";
 
 const cx = classnames.bind(styles);
 
 const AbsoluteCertainty = () => {
   return (
     <div className={cx("absolute-certainty")}>
-      <div className={cx("iframe")}>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/gHmEXcSMGqM"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen={true}
-        ></iframe>
-      </div>
+      <img src={cercei} alt="cercei illustration by anonym" />
       <h3>Absolute Certainty</h3>
       <p>
         I<br />
@@ -168,8 +159,12 @@ const AbsoluteCertainty = () => {
         <br />
         The only path is the way of the Seven’s light…
       </p>
-      <br />
-      <br />
+      <p>
+        Poetry from{" "}
+        <a href="https://www.fiverr.com/effywhitehead?source=inbox">
+          Effywhitehead
+        </a>
+      </p>
     </div>
   );
 };
