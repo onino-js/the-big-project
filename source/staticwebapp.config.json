@@ -11,6 +11,10 @@
     {
       "route": "/about-we",
       "rewrite": "/"
+    },
+    {
+      "route": "/inventory",
+      "rewrite": "/"
     }
   ]
 }
