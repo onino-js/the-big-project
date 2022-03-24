@@ -1,6 +1,8 @@
 import { IartPiece } from "./../../models/art-piece.model";
 import AbsoluteCertainty from "./AbolusteCertainty/AbsoluteCertainty";
 import GFY from "./GFY/GFY";
+import HelloNature from "./HelloNature/HelloNature";
+import IHadADream from "./IHadeADream/IHadADream";
 import Turtoise from "./Turtoise/Turtoise";
 import WeCan from "./WeCan/WeCan";
 
@@ -41,7 +43,25 @@ export const artPieceList: IartPiece[] = [
     title: "Can you ?",
     category: "youtube masterpieces",
     illustratorId: "graphicsart",
-    authorId: "jason-ukorana",
+    authorId: "jasonenukora",
+    language: "en",
+  },
+  {
+    url: "i-had-a-dream",
+    component: IHadADream,
+    title: "I had a dream",
+    category: "website pearls",
+    illustratorId: "",
+    authorId: "jasonenukora",
+    language: "en",
+  },
+  {
+    url: "hello-nature",
+    component: HelloNature,
+    title: "Hello nature",
+    category: "website pearls",
+    illustratorId: "",
+    authorId: "jasonenukora",
     language: "en",
   },
 ];

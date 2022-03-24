@@ -14,3 +14,15 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .about-we {
+    padding: 2rem;
+    .pictoanonym-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}

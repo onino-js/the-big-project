@@ -160,7 +160,7 @@ const AbsoluteCertainty = () => {
         The only path is the way of the Seven’s light…
       </p>
       <p>
-        Poetry from{" "}
+        Poetry by
         <a href="https://www.fiverr.com/effywhitehead?source=inbox">
           Effywhitehead
         </a>

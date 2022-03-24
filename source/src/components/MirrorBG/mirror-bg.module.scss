@@ -13,3 +13,11 @@
     max-width: 500px;
   }
 }
+
+@media (max-width: 600px) {
+  .mirror-bg {
+    img {
+      max-width: 350px;
+    }
+  }
+}

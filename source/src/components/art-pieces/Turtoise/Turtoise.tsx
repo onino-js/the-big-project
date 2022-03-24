@@ -62,6 +62,12 @@ const Turtoise = () => {
           prettiest of the meme to misleading emblem <br />
           It will be good enough will be the Farce
         </p>
+        <p>
+          Poetry by
+          <a href="https://www.youtube.com/watch?v=MXE2xUJgEXg&ab_channel=ColonelMoutarde">
+            Psyhodelik le gaulois
+          </a>
+        </p>
       </div>
     </>
   );

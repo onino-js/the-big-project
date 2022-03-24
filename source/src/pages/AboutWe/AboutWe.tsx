@@ -7,7 +7,7 @@ const cx = classnames.bind(styles);
 
 export const AboutWe: React.FC = () => (
   <section className={cx("about-we")}>
-    <h2>Know here we are</h2>
+    <h2>Here we are now</h2>
     <div className={cx("pictoanonym-grid")}>
       {pictoIndex.map((d, i) => (
         <img src={d} alt={`pictoanonym-${i}`} />

@@ -1,11 +1,13 @@
 import styles from "./we-can.module.scss";
 import classnames from "classnames/bind";
+import shyriu from "./../../../assets/images/shyriu.jpg";
 
 const cx = classnames.bind(styles);
 
 const WeCan = () => {
   return (
     <div className={cx("we-can")}>
+      <img src={shyriu} alt="saint seiya illustration from graphicsarc" />
       <h3>CAN YOU?</h3>
       Can you look beyond the things you see?
       <br />
@@ -51,6 +53,20 @@ const WeCan = () => {
       <br />
       I can be whatever I believe.
       <br />
+      <br />
+      ***
+      <br />
+      <p>
+        Poetry by <a href="https://www.fiverr.com/jasonenukora">jasonenukora</a>
+      </p>
+      <p>
+        Illustration by{" "}
+        <a href="https://www.fiverr.com/graphicsarc?source=inbox">
+          grapgicsart
+        </a>
+      </p>
+      <br />
+      ***
     </div>
   );
 };
