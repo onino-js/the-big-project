@@ -1,6 +1,4 @@
 // import Modal from "./components/Modal/Modal";
-import { useEffect, useState } from "react";
-import { BreveModal } from "./components/BreveModal/BreveModal";
 import { AppRoutes } from "./pages/AppRoutes";
 
 export const App = () => {
