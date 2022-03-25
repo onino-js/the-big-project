@@ -12,9 +12,9 @@ const Turtoise = () => {
         <h1>Once upon a turtoise</h1>
         <p>
           All I need is one <br />
-          one turtoise is enough <br />
+          One turtoise is enough <br />
           Baby you got it wrong <br />
-          please turn your soul into folks
+          Please turn your soul into folks
         </p>
         <p>
           We are collusion, melody contracted <br />
@@ -46,27 +46,21 @@ const Turtoise = () => {
         </p>
         <p>
           We are misconception, you are the problem <br />
-          Simple melody, that digs in our heads
+          Simple malady that digs in our heads
         </p>
         <p>
-          Let’s break this chain, make it an dote <br />I beg you join we in the
-          Barbapapote
+          Let’s break this chain, make it an ax dote <br />I beg you join we in
+          the Barbapapote
         </p>
-        <p>We just melody and only you only got</p>
+        <p>We just melody and only you got</p>
         <p>
           May you find your turtoise and go through the extreme
           <br />
           God will your sacrifice it might be rewarded <br />
           <br />
           Just for the livings and living for the justs <br />
-          prettiest of the meme to misleading emblem <br />
-          It will be good enough will be the Farce
-        </p>
-        <p>
-          Poetry by
-          <a href="https://www.youtube.com/watch?v=MXE2xUJgEXg&ab_channel=ColonelMoutarde">
-            Psyhodelik le gaulois
-          </a>
+          Prettiest of the meme to misleading emblem <br />
+          You will be good enough will be the Farce
         </p>
       </div>
     </>
