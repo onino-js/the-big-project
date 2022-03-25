@@ -1,6 +1,5 @@
 import styles from "./louchee-bulle.module.scss";
 import classnames from "classnames/bind";
-import shyriu from "./../../../assets/images/shyriu.jpg";
 
 const cx = classnames.bind(styles);
 
