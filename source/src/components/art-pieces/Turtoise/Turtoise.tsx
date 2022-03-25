@@ -1,7 +1,6 @@
 import styles from "./turtoise.module.scss";
 import classnames from "classnames/bind";
-import Header from "../../Header/header";
-import turtoise from "./../../../assets/images/turtoise.jpg";
+import turtoise from "./../../../assets/images/turtoise-cloud.jpg";
 
 const cx = classnames.bind(styles);
 
