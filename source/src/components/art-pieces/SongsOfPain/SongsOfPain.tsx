@@ -1,11 +1,13 @@
 import styles from "./songs-of-pain.module.scss";
 import classnames from "classnames/bind";
+import eagleOwl from "./../../../assets/images/eagle_owl.jpg";
 
 const cx = classnames.bind(styles);
 
 const SongsOfPain = () => {
   return (
     <div className={cx("songs-of-pain")}>
+      <img src={eagleOwl} alt="eagle owl illustration from Skyart 007" />
       <h3>Songs of pain</h3>
       Kehinde ti ku!! <br />
       The green-eyed owl laughs aloud. <br />
@@ -50,6 +52,10 @@ const SongsOfPain = () => {
       <br />
       <p>
         Poetry by <a href="https://www.fiverr.com/jasonenukora">jasonenukora</a>
+      </p>
+      <p>
+        Illustration by{" "}
+        <a href="https://www.fiverr.com/skyart007?source=inbox">skyart007</a>
       </p>
     </div>
   );

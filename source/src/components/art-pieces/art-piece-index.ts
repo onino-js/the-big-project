@@ -6,6 +6,7 @@ import FarAWest from "./FarAWest/FarAWest";
 import GFY from "./GFY/GFY";
 import HelloNature from "./HelloNature/HelloNature";
 import IHadADream from "./IHadeADream/IHadADream";
+import LoucheeBulle from "./LoucheBulle/LoucheeBulle";
 import SongsOfPain from "./SongsOfPain/SongsOfPain";
 import StrengthUnity from "./StrengthUnity/StrengthUnity";
 import Turtoise from "./Turtoise/Turtoise";
@@ -87,14 +88,15 @@ export const artPieceList: IartPiece[] = [
     authorId: "jasonenukora",
     language: "en",
   },
+
   {
-    url: "en-of-journey",
-    component: EndOfJourney,
-    title: "End of the journey",
-    category: "website pearls",
-    illustratorId: "",
-    authorId: "Psyhodelik le gaulois",
-    language: "fr",
+    url: "far-a-west",
+    component: FarAWest,
+    title: "Far a west",
+    category: "youtube masterpieces",
+    illustratorId: "graphicsarc",
+    authorId: "Anonym",
+    language: "en",
   },
   {
     url: "en-avant-marche",
@@ -106,12 +108,21 @@ export const artPieceList: IartPiece[] = [
     language: "fr",
   },
   {
-    url: "far-a-west",
-    component: FarAWest,
-    title: "Far a west",
-    category: "youtube masterpieces",
-    illustratorId: "graphicsarc",
-    authorId: "Anonym",
-    language: "en",
+    url: "louchee-bulle",
+    component: LoucheeBulle,
+    title: "Louchee double, maux content triple",
+    category: "website pearls",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "en-of-journey",
+    component: EndOfJourney,
+    title: "End of the journey",
+    category: "website pearls",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
   },
 ];

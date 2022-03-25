@@ -1,14 +1,15 @@
 import styles from "./turtoise.module.scss";
 import classnames from "classnames/bind";
 import Header from "../../Header/header";
+import turtoise from "./../../../assets/images/turtoise.jpg";
 
 const cx = classnames.bind(styles);
 
 const Turtoise = () => {
   return (
     <>
-      <Header />
       <div className={cx("turtoise")}>
+        <img src={turtoise} alt="turtoise galactic ride from skyart007" />
         <h1>Once upon a turtoise</h1>
         <p>
           All I need is one <br />
@@ -62,6 +63,14 @@ const Turtoise = () => {
           Prettiest of the meme to misleading emblem <br />
           You will be good enough will be the Farce
         </p>
+        ***
+        <br />
+        <p>
+          Illustration by{" "}
+          <a href="https://www.fiverr.com/skyart007">skyartOO7</a>
+        </p>
+        <br />
+        ***
       </div>
     </>
   );
