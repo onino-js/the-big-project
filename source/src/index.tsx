@@ -4,6 +4,13 @@ import "./index.css";
 import { App } from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+/**
+ * I'm looking fo developers to help me in the journey
+ * A lot of cool things to develop.
+ * Stack: React / Typecript / .NET / Azure / Neo4j
+ * Email me at niouseoner@protonmail.com with object : "The developping turtoise"
+ * Thanks
+ */
 ReactDOM.render(
   <BrowserRouter>
     <App />

@@ -2,9 +2,10 @@
 
 body {
   margin: 0;
-  font-family: "Pacifico", cursive;
+  font-family: "Indie Flower", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
 }
 
 code {
@@ -27,4 +28,18 @@ code {
   font-family: "Indie Flower";
   src: url("./assets/styles/fonts/Indie_Flower/IndieFlower-Regular.ttf")
     format("truetype");
+}
+
+@font-face {
+  font-family: "Rumburak";
+  src: url("./assets/styles/fonts/Rumburak.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "maine-light";
+  src: url("./assets/styles/fonts/Maine/maine-light-webfont.woff2")
+      format("woff2"),
+    url("./assets/styles/fonts/Maine/maine-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }

@@ -1,6 +1,6 @@
 import styles from "./far-a-west.module.scss";
 import classnames from "classnames/bind";
-import shyriu from "./../../../assets/images/shyriu.jpg";
+import shyriu from "./../../../assets/images/shyriu-2.jpg";
 
 const cx = classnames.bind(styles);
 
@@ -8,7 +8,7 @@ const FarAWest = () => {
   return (
     <div className={cx("far-a-west")}>
       <img src={shyriu} alt="saint seiya illustration from graphicsarc" />
-      <h3>The strengh in unity</h3>
+      <h3>Far a west</h3>
       You came far from england to enslave my brothers <br />
       You need unique hand to be less oblivion <br />
       The bravest of all knights only fight for others <br />
