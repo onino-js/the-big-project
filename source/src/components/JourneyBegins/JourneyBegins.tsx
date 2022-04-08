@@ -1,6 +1,6 @@
 import styles from "./journey-begins.module.scss";
 import classnames from "classnames/bind";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const cx = classnames.bind(styles);
 
