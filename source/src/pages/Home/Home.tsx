@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/header";
 import { MirrorBG } from "../../components/MirrorBG/MirrorBG";
+import { AboutWe } from "../AboutWe/AboutWe";
+import { Inventory } from "../Inventory/Inventory";
 // import { SVGBook } from "../../components/svg/SVGBook/SVGBook";
 
 // const tsPasta = new TSPasta({ welcomeElementId: WELCOM_HTML_TAG_ID });
@@ -15,10 +17,13 @@ const Home = () => {
     <>
       <Header />
       <JourneyBegins id={WELCOM_HTML_TAG_ID} />
-      {/* <SVGBook /> */}
-      <NavLink to="piece">
+      <AboutWe />
+      <h1>Poetry</h1>
+      <Inventory />
+      <h1>Gallery</h1>
+      {/* <NavLink to="piece">
         <Footer />
-      </NavLink>
+      </NavLink> */}
       <MirrorBG />
     </>
   );

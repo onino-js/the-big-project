@@ -1,5 +1,6 @@
 import { IartPiece } from "./../../models/art-piece.model";
 import AbsoluteCertainty from "./AbolusteCertainty/AbsoluteCertainty";
+import BalladeMentale from "./BalladeMental/BalladeMental";
 import EnAvantMarche from "./EnAvantMarche/EnAvantMarche";
 import EndOfJourney from "./EndOfJourney/EndOfJourney";
 import FarAWest from "./FarAWest/FarAWest";
@@ -7,6 +8,9 @@ import GFY from "./GFY/GFY";
 import HelloNature from "./HelloNature/HelloNature";
 import IHadADream from "./IHadeADream/IHadADream";
 import LoucheeBulle from "./LoucheBulle/LoucheeBulle";
+import PassScience from "./PassScience/PassScience";
+import Science4All from "./Science4All/Science4All";
+import ScienceEtonnate from "./ScienceEtonnante/ScienceEtonnate";
 import SongsOfPain from "./SongsOfPain/SongsOfPain";
 import StrengthUnity from "./StrengthUnity/StrengthUnity";
 import Turtoise from "./Turtoise/Turtoise";
@@ -117,9 +121,45 @@ export const artPieceList: IartPiece[] = [
     language: "fr",
   },
   {
+    url: "science-fascinante",
+    component: ScienceEtonnate,
+    title: "Le sang des khôquaïlles-tuirettes",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "science-3-all",
+    component: Science4All,
+    title: "L'Hère co-varrant",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "fausse-science",
+    component: PassScience,
+    title: "La Popo logique du lemme en panne",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "malade-bancale",
+    component: BalladeMentale,
+    title: "Coup de fierté",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
     url: "en-of-journey",
     component: EndOfJourney,
-    title: "End of the journey",
+    title: "Fin de la partie",
     category: "website pearls",
     illustratorId: "",
     authorId: "Psyhodelik le gaulois",

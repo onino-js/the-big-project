@@ -18,6 +18,10 @@ code {
   position: relative;
 }
 
+h1 {
+  text-align: center;
+}
+
 #breve-button {
   position: fixed;
   top: 0px;

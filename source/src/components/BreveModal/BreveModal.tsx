@@ -1,7 +1,7 @@
 import styles from "./breve-modal.module.scss";
 import classnames from "classnames/bind";
 import Modal, { IModalProps } from "../modal/Modal";
-import mirrorBG from "./../../assets/images/mirror.jpg";
+import mirrorBG from "./../../assets/images/mirror.png";
 import { breves } from "../../assets/breves/breves";
 import TSPasta from "../../scripts/ts-pasta";
 
@@ -12,9 +12,9 @@ export const BreveModal: React.FC<IModalProps> = (props) => {
   return (
     <Modal
       {...props}
-      //rootStyle={{ backgroundColor: "transparent" }}
+      rootStyle={{ backgroundColor: "white" }}
       style={{
-        // backgroundColor: "transparent",
+        backgroundColor: "transparent",
         boxShadow: "none",
         width: "700px",
         position: "relative",

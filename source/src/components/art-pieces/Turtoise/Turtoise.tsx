@@ -18,15 +18,15 @@ const Turtoise = () => {
         </p>
         <p>
           We are collusion, melody contracted <br />
-          The mind of young boy far a west
+          The mind of a young boy far a west
         </p>
         <p>
           We are fusion, melody repeated… <br />
-          CleO has fever, and we turn in his head
+          ClEO has fever and we turn in his head
         </p>
         <p>
           We are a union, melody weighted ! <br />
-          Devs heads and the songs of sirens
+          Devs ahead and the songs of sirens
         </p>
         <p>
           We are completion, melody blended <br />
@@ -49,14 +49,14 @@ const Turtoise = () => {
           Simple malady that digs in our heads
         </p>
         <p>
-          Let’s break this chain, make it an ax dote <br />I beg you join we in
+          Let’s break this chain, make it an ex dote <br />I beg you join we in
           the Barbapapote
         </p>
-        <p>We just melody and only you got</p>
+        <p>We're just melody and only you got</p>
         <p>
           May you find your turtoise and go through the extreme
           <br />
-          God will your sacrifice it might be rewarded <br />
+          Gods will your sacrifice it might be rewarded <br />
           <br />
           Just for the livings and living for the justs <br />
           Prettiest of the meme to misleading emblem <br />

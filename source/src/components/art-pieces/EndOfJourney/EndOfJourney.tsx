@@ -13,7 +13,6 @@ const EndOfJourney = () => {
   }, []);
   return (
     <div className={cx("end-of-journey")}>
-      <h3>Le soldat inconnu</h3>
       <br />
       La vérité n'a aucune importance
       <br />
