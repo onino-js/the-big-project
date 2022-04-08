@@ -5,8 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import { artPieceList } from "../../components/art-pieces/art-piece-index";
 import { ART_PIECE_PARAM } from "../../constants/site.constants";
 import GFY from "../../components/art-pieces/GFY/GFY";
-// import TSPasta from "../../scripts/ts-pasta";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const cx = classnames.bind(styles);
 
@@ -26,7 +25,9 @@ export const Piece: React.FC = () => {
       <div className={cx("piece")}>
         <ArtPieceComponent />
         <br />
-        {/* <NavLink to="/inventory"></NavLink> */}
+        <NavLink to="/">Back</NavLink>
+        <br />
+        <br />
         {/* <p>Or shuffle poetry by clicking below:</p> */}
       </div>
       {/* <Footer onClick={onFooterClick} /> */}

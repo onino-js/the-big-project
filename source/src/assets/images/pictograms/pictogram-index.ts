@@ -8,6 +8,7 @@ import pic7 from "./pseudAnonym7.png";
 import pic8 from "./pseudoAnonym8.png";
 import pic9 from "./pseudoAnonym9.png";
 import pic10 from "./pseudoAnonym10.png";
+import pic11 from "./pseudoAnonym11.png";
 
 export const pictoIndex = [
   pic3,
@@ -19,6 +20,7 @@ export const pictoIndex = [
   pic8,
   pic9,
   pic10,
+  pic11,
 ];
 
 export default pictoIndex;

@@ -7,6 +7,8 @@ const cx = classnames.bind(styles);
 
 export const AboutWe: React.FC = () => (
   <section className={cx("about-we")}>
+    <h4>And here we are now</h4>
+    <p>(Sorry for all artists we couldn't represented)</p>
     {/* <h2>Here we are now</h2> */}
     <div className={cx("pictoanonym-grid")}>
       {pictoIndex.map((d, i) => (
@@ -14,7 +16,6 @@ export const AboutWe: React.FC = () => (
       ))}
     </div>
     <br />
-    <p>(Sorry for all artists we couldn't represented)</p>
     {/* <NavLink to="/">
       <h1>Back</h1>
     </NavLink> */}

@@ -9,9 +9,18 @@
     grid-auto-rows: max-content;
     grid-auto-flow: dense;
     justify-items: center;
+    justify-content: center;
     img {
       max-width: 200px;
     }
+  }
+  p {
+    font-size: 1rem;
+  }
+  h4 {
+    margin-top: 5rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
 

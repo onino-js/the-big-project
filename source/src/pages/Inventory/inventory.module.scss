@@ -1,4 +1,9 @@
 .inventory {
-  text-align: center;
-  display: grid;
+  // background-color: black;
+  // color: white;
+  padding-top: 1rem;
+  .list {
+    text-align: center;
+    display: grid;
+  }
 }
