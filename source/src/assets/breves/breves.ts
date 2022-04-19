@@ -69,4 +69,10 @@ export const breves: string[][] = [
     "I'll touch the heart of the nation of stars",
     "My loving story lies in freedom and balls",
   ],
+  [
+    "On vous donne un vieux",
+    "Et vous le rejetez",
+    "Tout pour une simple querelle",
+    "Mais quelle absurdité",
+  ],
 ];

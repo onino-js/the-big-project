@@ -7,9 +7,11 @@ const mp3s = [
   "poople 5.mp3",
   "poople 18.mp3",
   "poople 19.mp3",
+  "bonus 1.mp3",
+  "DLMBM",
 ];
-const pngs = new Array(16).fill(0).map((n, i) => `poople (${i + 1}).png`);
-const jpgs = new Array(8).fill(0).map((n, i) => `poople (${i + 1}).jpg`);
+const pngs = new Array(120).fill(0).map((n, i) => `poople (${i + 1}).png`);
+const jpgs = new Array(9).fill(0).map((n, i) => `poople (${i + 1}).jpg`);
 const jpegs = new Array(2).fill(0).map((n, i) => `poople (${i + 1}).jpeg`);
 const gift = new Array(1).fill(0).map((n, i) => `poople (1).gif`);
 

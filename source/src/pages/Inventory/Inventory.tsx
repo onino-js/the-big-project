@@ -11,7 +11,7 @@ const cx = classnames.bind(styles);
 export const Inventory: React.FC = () => {
   const [lngs, setlngs] = useState({
     en: true,
-    fr: true,
+    fr: false,
     sp: true,
   });
   const toggleActiveFlag = (d: string) => {
