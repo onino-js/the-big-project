@@ -48,16 +48,8 @@ const SongsOfPain = () => {
       If only all could trust in Olodumare's word. <br />
       For him alone gives life for all to live. <br />
       <br />
-      <br />
       ***
       <br />
-      <p>
-        Poetry by <a href="https://www.fiverr.com/jasonenukora">jasonenukora</a>
-      </p>
-      <p>
-        Illustration by{" "}
-        <a href="https://www.fiverr.com/skyart007?source=inbox">skyart007</a>
-      </p>
     </div>
   );
 };

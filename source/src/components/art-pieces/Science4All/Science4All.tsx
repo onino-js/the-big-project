@@ -12,20 +12,20 @@ const Science4All = () => {
       Quand j'entends ta douce voix je bois du petit lait <br />
       Laisse moi donc te fesser par la sainte volonté <br />
       Laisse tombayes par pitié ce type ne sert à rien <br />
-      Juste à embrigader les têtes d'abruti <br />
+      Juste à embrigader les têtes d'ahuris <br />
       Dans des sombres pensées qui divisent les martiens <br />
       Tu veux ta mère trouver ? Va la chercher ailleurs <br />
       Tu devrais notifier qu'elle te berce encore <br />
       Oublie les proba, ensembles et orgueil <br />
       Oublie analyses, géo et des meilleures <br />
-      La mère de toutes les pâtes c'est l'algorithme <br />
+      La mère de toutes les pâtes c'est l'algochimie <br />
       Dynamiser les cartes pour tuer l'ennui <br />
       Trouve un sens unique à cette chienne de vie <br />
-      On se croit tous malin tu joues un jeux dangereux <br />
-      Ton esprit navigue dans des eaux si étroites <br />
-      On ne pardonnera pas aux petits prétentieux <br />
-      Qui donnent des leçons car ils sont bons en maths <br />
-      Tes yeux sont si aimants alors reste à la place <br />
+      On se croit tous malin tu joues jeux don gérable <br />
+      Ton esprit tranchant navigue des eaux étroites <br />
+      Tu ne pardonneras pas aux petits prétentieux <br />
+      Qui donnent des leçons car ils sont forts en pâtes <br />
+      Tes yeux sont si aimants alors reste à La place <br />
       Car il y a un variant jamais non satisfait <br />
       le Tout c'est tout les temps et puis ça se repasse <br />
       Un filet passionnant qui attend sur le quai <br />
@@ -53,6 +53,7 @@ const Science4All = () => {
       Aimons le en dockers met subtil & cocasse <br />
       Al ne parle Flamand mais un beau Français <br />
       <br />
+      ***
       <br />
     </div>
   );

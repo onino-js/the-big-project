@@ -49,15 +49,34 @@ export const Inventory: React.FC = () => {
           </NavLink>
         )}
         <br />
-        {/* <h3>Poèmes en français</h3>
-        {artPieceList
+        <h3>French only !!</h3>
+        <div>
+          Voici un cours pratique sur la théorie du tout, en espérant que cela
+          puisse vous guider dans vos priorités:
+        </div>
+        <div>Et l'examen qui va avec:</div>
+        <div>
+          Une première Encyclique (libre à vous d'en écrire d'autres en ce qui
+          concerne vous et votre entourage à toute ces échelles):
+        </div>
+        <div>
+          Et enfin pour les dingos, les annexes de la théorie qui cadrent bien
+          avec les lentilles d'un canidé:
+        </div>
+        {/* {artPieceList
           .filter((d, i) => d.language === "fr")
           .map((d, i) => (
             <NavLink to={`/piece?truth=${d.url}`}>{d.title}</NavLink>
-          ))}
-        <br /> */}
+          ))} */}
+        <br />
         {/* <NavLink to="/">Back home</NavLink> */}
+        <div>
+          <h2>Pooples for free just right here</h2>
+          <p>Just click the opossum below</p>
+          <p>Ca sert à rien mais c'est joulie :)</p>
+        </div>
       </div>
+
       {/* <Footer /> */}
     </section>
   );

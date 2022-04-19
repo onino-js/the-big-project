@@ -54,11 +54,6 @@ const StrengthUnity = () => {
       <br />
       ***
       <br />
-      <p>
-        Poetry by <a href="https://www.fiverr.com/jasonenukora">jasonenukora</a>
-      </p>
-      <br />
-      ***
     </div>
   );
 };

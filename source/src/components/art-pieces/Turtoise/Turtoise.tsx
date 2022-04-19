@@ -64,12 +64,6 @@ const Turtoise = () => {
         </p>
         ***
         <br />
-        <p>
-          Illustration by{" "}
-          <a href="https://www.fiverr.com/skyart007">skyartOO7</a>
-        </p>
-        <br />
-        ***
       </div>
     </>
   );

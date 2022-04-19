@@ -56,17 +56,6 @@ const WeCan = () => {
       <br />
       ***
       <br />
-      <p>
-        Poetry by <a href="https://www.fiverr.com/jasonenukora">jasonenukora</a>
-      </p>
-      <p>
-        Illustration by{" "}
-        <a href="https://www.fiverr.com/graphicsarc?source=inbox">
-          grapgicsart
-        </a>
-      </p>
-      <br />
-      ***
     </div>
   );
 };

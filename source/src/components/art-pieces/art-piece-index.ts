@@ -11,10 +11,11 @@ import SongsOfPain from "./SongsOfPain/SongsOfPain";
 import StrengthUnity from "./StrengthUnity/StrengthUnity";
 import Turtoise from "./Turtoise/Turtoise";
 import WeCan from "./WeCan/WeCan";
-// import BalladeMentale from "./BalladeMental/BalladeMental";
-// import PassScience from "./PassScience/PassScience";
-// import Science4All from "./Science4All/Science4All";
-// import ScienceEtonnate from "./ScienceEtonnante/ScienceEtonnate";
+import BalladeMentale from "./BalladeMental/BalladeMental";
+import PassScience from "./PassScience/PassScience";
+import Science4All from "./Science4All/Science4All";
+import ScienceEtonnate from "./ScienceEtonnante/ScienceEtonnate";
+import Family from "./Family/Family";
 
 export const artPieceIndex = {
   "absolute-certainty": {
@@ -120,42 +121,51 @@ export const artPieceList: IartPiece[] = [
     authorId: "Psyhodelik le gaulois",
     language: "fr",
   },
-  // {
-  //   url: "science-fascinante",
-  //   component: ScienceEtonnate,
-  //   title: "Le sang des khôquaïlles-tuirettes",
-  //   category: "science",
-  //   illustratorId: "",
-  //   authorId: "Psyhodelik le gaulois",
-  //   language: "fr",
-  // },
-  // {
-  //   url: "science-3-all",
-  //   component: Science4All,
-  //   title: "L'Hère co-varrant",
-  //   category: "science",
-  //   illustratorId: "",
-  //   authorId: "Psyhodelik le gaulois",
-  //   language: "fr",
-  // },
-  // {
-  //   url: "fausse-science",
-  //   component: PassScience,
-  //   title: "La Popo logique du lemme en panne",
-  //   category: "science",
-  //   illustratorId: "",
-  //   authorId: "Psyhodelik le gaulois",
-  //   language: "fr",
-  // },
-  // {
-  //   url: "malade-bancale",
-  //   component: BalladeMentale,
-  //   title: "Coup de fierté",
-  //   category: "science",
-  //   illustratorId: "",
-  //   authorId: "Psyhodelik le gaulois",
-  //   language: "fr",
-  // },
+  {
+    url: "science-fascinante",
+    component: ScienceEtonnate,
+    title: "Le sang des khôquaïlles-tuirettes",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "science-3-all",
+    component: Science4All,
+    title: "L'Hère co-varrant",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "fausse-science",
+    component: PassScience,
+    title: "La Popo logique du lemme en panne",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "malade-bancale",
+    component: BalladeMentale,
+    title: "Coup de fierté",
+    category: "science",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
+  {
+    url: "famelic",
+    component: Family,
+    title: "Famille rachissime",
+    category: "website pearls",
+    illustratorId: "",
+    authorId: "Psyhodelik le gaulois",
+    language: "fr",
+  },
   {
     url: "en-of-journey",
     component: EndOfJourney,

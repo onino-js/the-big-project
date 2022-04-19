@@ -41,9 +41,9 @@ const IHadADream = () => {
       With faith and hope, I still march on. <br />
       And whoever asked, I simply say, <br />
       I had a dream, a stroll into my future's home. <br />
-      <p>
-        Poetry by <a href="https://www.fiverr.com/jasonenukora">jasonenukora</a>
-      </p>
+      <br />
+      ***
+      <br />
     </div>
   );
 };

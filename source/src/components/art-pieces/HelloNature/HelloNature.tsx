@@ -32,9 +32,8 @@ const HelloNature = () => {
       You're the calmness that we breathe and without you, can we live
       <br />
       <br />
-      <p>
-        Poetry by <a href="https://www.fiverr.com/jasonenukora">jasonenukora</a>
-      </p>
+      ***
+      <br />
     </div>
   );
 };

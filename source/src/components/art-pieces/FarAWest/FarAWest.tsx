@@ -20,20 +20,6 @@ const FarAWest = () => {
       You got to the bottom when I raised the banners <br />
       You'll have little time may you find the pardon <br />
       <br />
-      <br />
-      ***
-      <br />
-      <p>
-        Poetry by{" "}
-        <a href="https://www.fiverr.com/jasonenukora">Psyhodelik le gaulois</a>
-      </p>
-      <div>
-        Illustration by{" "}
-        <a href="https://www.fiverr.com/graphicsarc?source=inbox">
-          grapgicsart
-        </a>
-      </div>
-      <br />
       ***
       <br />
     </div>

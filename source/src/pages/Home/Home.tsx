@@ -7,7 +7,8 @@ import Header from "../../components/Header/header";
 import { MirrorBG } from "../../components/MirrorBG/MirrorBG";
 import { AboutWe } from "../AboutWe/AboutWe";
 import { Inventory } from "../Inventory/Inventory";
-import { Gallery } from "../Gallery/Gallery";
+import Footer from "../../components/Footer/Footer";
+// import { Gallery } from "../Gallery/Gallery";
 // import { SVGBook } from "../../components/svg/SVGBook/SVGBook";
 
 // const tsPasta = new TSPasta({ welcomeElementId: WELCOM_HTML_TAG_ID });
@@ -20,10 +21,11 @@ const Home = () => {
       <JourneyBegins id={WELCOM_HTML_TAG_ID} />
       <AboutWe />
       <Inventory />
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <NavLink to="piece">
         <Footer />
       </NavLink> */}
+      <Footer />
       <MirrorBG />
     </>
   );

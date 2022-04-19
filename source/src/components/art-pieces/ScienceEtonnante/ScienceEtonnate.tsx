@@ -190,7 +190,7 @@ const ScienceEtonnate = () => {
       <br />
       Dans le réseau de mes blèmes j'avoue j'suis un hôtel
       <br />
-      Les clés n'y sont suites mais les suites n'y sont clés
+      Les clés sont des suites mais les suites n'y sont clés
       <br />
       C'est quand t'as tout compris que tu dervais douter
       <br />
@@ -202,7 +202,7 @@ const ScienceEtonnate = () => {
       <br />
       Fourneau de mes recettes, glissière impénétrable
       <br />
-      Rouflant ses rouflaquettes, mystère inter-minables
+      Rouflant ses rouflaquettes, mystère interminables
       <br />
       A jamais deux sans trois, toujours des complexés
       <br />
@@ -244,6 +244,7 @@ const ScienceEtonnate = () => {
       Puisse l'aurore se lever sur la courbe d'un benêt
       <br />
       <br />
+      ***
       <br />
     </div>
   );
