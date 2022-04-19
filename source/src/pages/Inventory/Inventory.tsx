@@ -42,27 +42,52 @@ export const Inventory: React.FC = () => {
           ))}
         <br />
         {lngs.fr && (
-          <NavLink
-            to={`/piece?truth=${artPieceList[artPieceList.length - 1].url}`}
-          >
-            {artPieceList[artPieceList.length - 1].title}
-          </NavLink>
+          <>
+            <NavLink
+              to={`/piece?truth=${artPieceList[artPieceList.length - 1].url}`}
+            >
+              {artPieceList[artPieceList.length - 1].title}
+            </NavLink>
+            <br />
+            <div className={cx("french-only")}>
+              <h3>French only !!</h3>
+              <div>
+                Voici un cours pratique sur la théorie du tout, en espérant que
+                cela puisse vous guider dans vos priorités{" "}
+                <a href="docs/ETPAF.pdf" target="_blank">
+                  juste ici même.
+                </a>
+                :
+              </div>
+              <br />
+              <div>
+                Et l'examen qui va avec{" "}
+                <a href="docs/EXAMEN.pdf" target="_blank">
+                  par la bas.
+                </a>
+                :
+              </div>
+              <br />
+              <div>
+                Une première Encyclique{" "}
+                <a href="docs/ENCYCLIQUE.pdf" target="_blank">
+                  ci présente.
+                </a>{" "}
+                (libre à vous d'en écrire d'autres en ce qui concerne vous et
+                votre entourage à toute ces échelles):
+              </div>
+              <br />
+              <div>
+                Et enfin pour les dingos,{" "}
+                <a href="docs/ANNEXES.pdf" target="_blank">
+                  les annexes de la théorie qui cadrent bien avec les lentilles
+                  d'un canidé.
+                </a>
+              </div>
+            </div>
+          </>
         )}
-        <br />
-        <h3>French only !!</h3>
-        <div>
-          Voici un cours pratique sur la théorie du tout, en espérant que cela
-          puisse vous guider dans vos priorités:
-        </div>
-        <div>Et l'examen qui va avec:</div>
-        <div>
-          Une première Encyclique (libre à vous d'en écrire d'autres en ce qui
-          concerne vous et votre entourage à toute ces échelles):
-        </div>
-        <div>
-          Et enfin pour les dingos, les annexes de la théorie qui cadrent bien
-          avec les lentilles d'un canidé:
-        </div>
+
         {/* {artPieceList
           .filter((d, i) => d.language === "fr")
           .map((d, i) => (

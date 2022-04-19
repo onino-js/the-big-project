@@ -55,4 +55,18 @@ export const breves: string[][] = [
     "The one thing you lack, to know the defeat",
     "Send chicken attacks in the street of rage",
   ],
+  [
+    "Qu'ai-je fais au bon dieu mon aînée",
+    "pour Qui le mirroir se maquille",
+    "L'aurais-je élevé comme une traînée ?",
+    "La vie est un long fleuve tranquille",
+  ],
+  [
+    "A boy with a dream is my mission to Mars",
+    "A head in the sky inline to rule them all",
+    "No need any fuel to propel my cars",
+    "My pal you'll pay to soften the downfall",
+    "I'll touch the heart of the nation of stars",
+    "My loving story lies in freedom and balls",
+  ],
 ];
