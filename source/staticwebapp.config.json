@@ -16,5 +16,6 @@
       "route": "/inventory",
       "rewrite": "/"
     }
+    
   ]
 }
