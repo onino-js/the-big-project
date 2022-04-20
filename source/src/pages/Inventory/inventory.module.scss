@@ -1,7 +1,5 @@
 .inventory {
-  // background-color: black;
-  // color: white;
-  padding-top: 1rem;
+  padding: 0rem 2rem;
   .list {
     text-align: center;
     display: grid;
@@ -9,5 +7,18 @@
   .french-only {
     font-size: 0.8em;
     letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 600px) {
+  .inventory {
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    .list {
+      row-gap: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 }

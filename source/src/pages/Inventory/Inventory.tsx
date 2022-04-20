@@ -26,6 +26,7 @@ export const Inventory: React.FC = () => {
       </div>
       <br />
       <div className={cx("list")}>
+        <br />
         {/* <h3>Inventory</h3> */}
         {lngs.en && (
           <NavLink to={`/piece?truth=${artPieceList[0].url}`}>
@@ -96,7 +97,7 @@ export const Inventory: React.FC = () => {
         <br />
         {/* <NavLink to="/">Back home</NavLink> */}
         <div>
-          <h2>Pooples for free just right here</h2>
+          <h1>Pooples for free just right here</h1>
           <p>Just click the opossum below</p>
           <p>Ca sert à rien mais c'est joulie :)</p>
         </div>

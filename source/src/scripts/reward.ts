@@ -9,8 +9,9 @@ const mp3s = [
   "poople 19.mp3",
   "bonus 1.mp3",
   "DLMBM",
+  "BBDR",
 ];
-const pngs = new Array(120).fill(0).map((n, i) => `poople (${i + 1}).png`);
+const pngs = new Array(20).fill(0).map((n, i) => `poople (${i + 1}).png`);
 const jpgs = new Array(9).fill(0).map((n, i) => `poople (${i + 1}).jpg`);
 const jpegs = new Array(2).fill(0).map((n, i) => `poople (${i + 1}).jpeg`);
 const gift = new Array(1).fill(0).map((n, i) => `poople (1).gif`);
