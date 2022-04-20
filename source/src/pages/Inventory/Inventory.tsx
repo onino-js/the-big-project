@@ -71,7 +71,7 @@ export const Inventory: React.FC = () => {
               <br />
               <div>
                 Une première Encyclique{" "}
-                <a href="docs/ENCYCLIQUE.pdf" target="_blank">
+                <a href="docs/ENCYCLIQUE 1.pdf" target="_blank">
                   ci présente.
                 </a>{" "}
                 (libre à vous d'en écrire d'autres en ce qui concerne vous et
@@ -80,7 +80,7 @@ export const Inventory: React.FC = () => {
               <br />
               <div>
                 Et enfin pour les dingos,{" "}
-                <a href="docs/ANNEXES.pdf" target="_blank">
+                <a href="docs/ANNEXES 1.pdf" target="_blank">
                   les annexes de la théorie qui cadrent bien avec les lentilles
                   d'un canidé.
                 </a>
