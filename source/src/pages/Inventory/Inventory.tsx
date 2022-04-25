@@ -52,7 +52,7 @@ export const Inventory: React.FC = () => {
             <br />
             <div className={cx("french-only")}>
               <h3>French only !!</h3>
-              <div>
+              {/* <div>
                 Voici un cours pratique sur la théorie du tout, en espérant que
                 cela puisse vous guider dans vos priorités{" "}
                 <a href="docs/ETPAF.pdf" target="_blank">
@@ -68,23 +68,22 @@ export const Inventory: React.FC = () => {
                 </a>
                 :
               </div>
-              <br />
+              <br /> */}
               <div>
-                Une première Encyclique{" "}
-                <a href="docs/ENCYCLIQUE 1.pdf" target="_blank">
+                Pour les amateurs de posésie refractaire voici un petit recueil
+                qui ne mange pas de pain:
+                <a href="docs/ENCYCLIQUE 0.pdf" target="_blank">
                   ci présente.
                 </a>{" "}
-                (libre à vous d'en écrire d'autres en ce qui concerne vous et
-                votre entourage à toute ces échelles):
               </div>
               <br />
-              <div>
+              {/* <div>
                 Et enfin pour les dingos,{" "}
                 <a href="docs/ANNEXES 1.pdf" target="_blank">
                   les annexes de la théorie qui cadrent bien avec les lentilles
                   d'un canidé.
                 </a>
-              </div>
+              </div> */}
             </div>
           </>
         )}
@@ -97,8 +96,7 @@ export const Inventory: React.FC = () => {
         <br />
         {/* <NavLink to="/">Back home</NavLink> */}
         <div>
-          <h1>Pooples for free just right here</h1>
-          <p>Just click the opossum below</p>
+          <p>Just click the opossum below to get unpublished pieces of art:</p>
           <p>Ca sert à rien mais c'est joulie :)</p>
         </div>
       </div>
