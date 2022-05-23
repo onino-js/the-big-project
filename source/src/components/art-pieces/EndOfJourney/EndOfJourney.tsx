@@ -14,7 +14,7 @@ const EndOfJourney = () => {
   return (
     <div className={cx("end-of-journey")}>
       <br />
-      {/* La vérité n'a aucune importance
+      La vérité n'a aucune importance
       <br />
       La temps n'a qu'une unique portance
       <br />
@@ -29,7 +29,7 @@ const EndOfJourney = () => {
       L'unique Un prévisible qui dérange, la turbulence des rapides
       <br />
       L'unique Un capable de l'esprit, le sens de ressentir le vide
-      <br /> */}
+      <br />
       La vie est Un écoulement sans fin qui en un sens se rejouit
       <br />
       Mais ne peut être Un versé que par les troublions
