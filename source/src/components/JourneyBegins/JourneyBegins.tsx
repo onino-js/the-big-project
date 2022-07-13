@@ -13,7 +13,7 @@ interface IJourneyBeginsProps {
 const JourneyBegins: React.FC<IJourneyBeginsProps> = ({ id = DEFAULT_ID }) => {
   return (
     <section className={cx("journey-begins")} id={id}>
-      <h1>Hello Wellcomer !</h1>
+      <h1 id="test">Wellcome traveller !</h1>
       <p>
         We are a collision of artists who stroke the beat inadvertetly and
         contracted a rare melody. <br />
