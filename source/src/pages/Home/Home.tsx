@@ -19,8 +19,8 @@ const Home = () => {
     <>
       <Header />
       <JourneyBegins id={WELCOM_HTML_TAG_ID} />
-      <AboutWe />
-      <Inventory />
+      {/* <AboutWe /> */}
+      {/* <Inventory /> */}
       {/* <Gallery /> */}
       {/* <NavLink to="piece">
         <Footer />

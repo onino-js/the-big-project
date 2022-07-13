@@ -17,7 +17,7 @@ const Header: React.FC<React.HTMLAttributes<HTMLHeadElement>> = (props) => {
   return (
     <>
       <header className={cx("header")} {...props}>
-        <img src={whirl} alt="electromenagé" onClick={showBreve} />
+        <img src="banner.jpg" alt="electromenagé" onClick={showBreve} />
       </header>{" "}
       <BreveModal show={state.showBreve} close={closeBreve} />
     </>

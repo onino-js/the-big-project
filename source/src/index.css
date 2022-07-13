@@ -13,9 +13,10 @@ code {
     monospace;
 }
 #root {
-  max-width: 999px;
+  /* max-width: 999px; */
   margin: 0 auto;
   position: relative;
+  /* background-color: black; */
 }
 
 h1 {
