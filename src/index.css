@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Indie Flower", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#root {
+  /* max-width: 999px; */
+  margin: 0 auto;
+  position: relative;
+  /* background-color: black; */
+}
+
+h1 {
+  text-align: center;
+}
+
+#breve-button {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url("./assets/styles/fonts/Indie_Flower/IndieFlower-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Rumburak";
+  src: url("./assets/styles/fonts/Rumburak.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "maine-light";
+  src: url("./assets/styles/fonts/Maine/maine-light-webfont.woff2")
+      format("woff2"),
+    url("./assets/styles/fonts/Maine/maine-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}

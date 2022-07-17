@@ -1,0 +1,22 @@
+$image-gap: 500px;
+
+/**
+We are really sorry we took this piece of code somewhere on CODEPEN and didn't remember where it lies.
+But the indentity who did that could have done directly in scss with variables.
+It would have been great. Thanks.
+
+*/
+
+#slideshow {
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  background-color: #6adecd;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.slideshow {
+  min-height: 100px;
+  overflow: visible;
+}
