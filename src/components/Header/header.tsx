@@ -1,6 +1,6 @@
 import styles from "./header.module.scss";
 import classnames from "classnames/bind";
-import whirl from "./../../assets/images/whirl-paint.webp";
+// import whirl from "./../../assets/images/whirl-paint.webp";
 import { BreveModal } from "../BreveModal/BreveModal";
 import { useState } from "react";
 
