@@ -1,6 +1,22 @@
 header {
+  background-image: url('/../public/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  transition: height 1s ease;
   img {
     width: 100%;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    background-image: url('/../public/banner-2.jpg');
+    height: 130px;
+    transition: height 1s ease;
+    background-size: contain;
+    background-position: top;
   }
 }

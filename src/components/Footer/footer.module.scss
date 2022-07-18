@@ -1,15 +1,21 @@
 .footer {
-  display: flex;
-  margin: 3rem auto;
-  cursor: pointer;
-  img {
-    max-width: 600px;
-    margin: auto;
+  display: grid;
+  // grid-template-columns: 150px;
+  grid-auto-columns: 150px;
+  justify-content: center;
+  justify-items: center;
+  grid-auto-flow: column;
+  margin-bottom: 200px;
+  a {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .footer {
+    a {
+      font-size: 1rem;
+    }
     img {
       max-width: 350px;
     }

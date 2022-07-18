@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 30px;
+  background-color: #000000;
+  width: 100vw;
 }
 
 code {
@@ -16,6 +18,7 @@ code {
   /* max-width: 999px; */
   margin: 0 auto;
   position: relative;
+  width: 100%;
   /* background-color: black; */
 }
 
