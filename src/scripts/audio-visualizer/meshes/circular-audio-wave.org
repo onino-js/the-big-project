@@ -1,0 +1,154 @@
+import {
+  AdditiveBlending,
+  AudioAnalyser,
+  Line,
+  LineBasicMaterial,
+  Object3D,
+  Shape,
+} from 'three'
+import { ImprovedNoise } from './improvedNoise'
+
+const CONFIG_DEFAULT = {
+  RINGCOUNT: 60,
+  SEPARATION: 30,
+  INIT_RADIUS: 50,
+  SEGMENTS: 512,
+  VOL_SENS: 2,
+  BIN_COUNT: 512,
+}
+
+export class LoopVisualizer {
+  private rings:Line<any, LineBasicMaterial>[] = []
+  private materials:LineBasicMaterial[] = []
+
+  private levels:number[] = []
+  private colors:number[] = []
+
+  private loopHolder = new Object3D()
+  //@ts-ignore
+  private perlin = new ImprovedNoise()
+  private noisePos = 0
+  private freqByteData
+  private timeByteData
+
+  private loopGeom //one geom for all rings
+
+  private config = CONFIG_DEFAULT
+
+  private init() {
+    this.rings = []
+   // this.geoms = []
+    this.materials = []
+    this.levels = []
+    //waves = [];
+    this.colors = []
+
+    ////////INIT audio in
+    this.freqByteData = new Uint8Array(this.config.BIN_COUNT)
+    this.timeByteData = new Uint8Array(this.config.BIN_COUNT)
+
+    // scene.add(loopHolder);
+
+    var scale = 1
+    var alt = 0
+
+    var circleShape = new Shape()
+    circleShape.absarc(0, 0, this.config.INIT_RADIUS, 0, Math.PI * 2, false)
+    //createPointsGeometry returns (SEGMENTS * 2 )+ 1 points
+    this.loopGeom = circleShape.createPointsGeometry(this.config.SEGMENTS / 2)
+    this.loopGeom.dynamic = true
+
+    //create rings
+    for (var i = 0; i < this.config.RINGCOUNT; i++) {
+      var m = new LineBasicMaterial({
+        color: 0xffffff,
+        linewidth: 1,
+        opacity: 1,
+        blending: AdditiveBlending,
+        //depthTest : false,
+        transparent: true,
+      })
+
+      var line = new Line(this.loopGeom, m)
+
+      this.rings.push(line)
+      //geoms.push(geom);
+      this.materials.push(m)
+      scale *= 1.02
+      line.scale.x = scale
+      line.scale.y = scale
+
+      this.loopHolder.add(line)
+
+      this.levels.push(0)
+      //waves.push(emptyBinData);
+      this.colors.push(0)
+
+      //rings
+      //if (Math.floor(i /20) % 2 == 0 ){
+      // /line.visible = false;
+      // /}
+    }
+  }
+
+  remove() {
+    if (this.loopHolder) {
+      for (var i = 0; i < this.config.RINGCOUNT; i++) {
+        this.loopHolder.remove(this.rings[i])
+      }
+    }
+  }
+
+  update(analyser: AudioAnalyser) {
+    //analyser.smoothingTimeConstant = 0.1;
+    analyser.getFrequencyData()
+    analyser.getFrequencyData()
+
+    //get average level
+    var sum = 0
+    for (var i = 0; i < this.config.BIN_COUNT; i++) {
+      sum += this.freqByteData[i]
+    }
+    var aveLevel = sum / this.config.BIN_COUNT
+    var scaled_average = (aveLevel / 256) * this.config.VOL_SENS //256 is the highest a level can be
+    this.levels.push(scaled_average)
+
+    //read waveform into timeByteData
+    //waves.push(timeByteData);
+
+    //get noise color posn
+    this.noisePos += 0.005
+    var n = Math.abs(this.perlin.noise(this.noisePos, 0, 0))
+    this.colors.push(n)
+
+    this.levels.shift(1)
+    //waves.shift(1);
+    this.colors.shift(1)
+
+    //write current waveform into all rings
+    for (var j = 0; j < this.config.SEGMENTS; j++) {
+		this.loopGeom.vertices[j].z = this.timeByteData[j] - 128 //stretch by 2
+    }
+    // link up last segment
+    this.loopGeom.vertices[this.config.SEGMENTS].z = this.loopGeom.vertices[0].z
+    this.loopGeom.verticesNeedUpdate = true
+
+    //for( i = RINGCOUNT-1; i > 0 ; i--) {
+
+    for (i = 0; i < this.config.RINGCOUNT; i++) {
+      var ringId = this.config.RINGCOUNT - i - 1
+
+      var normLevel = this.levels[ringId] + 0.01 //avoid scaling by 0
+      var hue = this.colors[i]
+
+      this.materials[i].color.setHSL(hue, 1, normLevel)
+      this.materials[i].linewidth = normLevel * 3
+      this.materials[i].opacity = normLevel //fadeout
+      this.rings[i].scale.z = normLevel / 3
+    }
+
+    //auto tilt
+    // loopHolder.rotation.x = perlin.noise(noisePos * .5, 0,0) * Math.PI*.6;
+    // loopHolder.rotation.y = perlin.noise(noisePos * .5,10,0) * Math.PI*.6;
+  }
+}
