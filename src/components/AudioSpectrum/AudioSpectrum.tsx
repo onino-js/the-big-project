@@ -4,7 +4,8 @@ import styles from './AudioSpectrum.module.scss'
 import { Wave } from '@foobar404/wave'
 import WaveSurfer from 'wavesurfer'
 import { waveAnimations } from './wave-animations'
-import { NicePlayButton } from '../NicePlayButton/NicePlayButton'
+import { NicePlayButton } from './NicePlayButton/NicePlayButton'
+import { NextButton } from './NextButton/NextButton'
 
 const cx = classNames.bind(styles)
 
@@ -79,7 +80,11 @@ export const AudioSpectrum: React.FC<Props> = () => {
         width={size[1]}
       />
       <div id={'waveform'} className={cx('waveform')}></div>
-      <NicePlayButton onClick={createSurf} disabled={isPlaying} />
+      <div className={cx('btn-container')}>
+        <NextButton left />
+        <NicePlayButton onClick={createSurf} disabled={isPlaying} />
+        <NextButton />
+      </div>
     </div>
   )
 }
