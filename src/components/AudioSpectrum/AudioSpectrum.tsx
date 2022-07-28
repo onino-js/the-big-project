@@ -70,7 +70,11 @@ export const AudioSpectrum: React.FC<Props> = () => {
       />
       <div className={cx('btn-container')}>
         <NextButton left disabled={!isPlaying} />
-        <NicePlayButton onClick={createSurf} disabled={isPlaying} />
+        <NicePlayButton
+          onClick={createSurf}
+          disabled={isPlaying}
+          onKeyDown={createSurf}
+        />
         <NextButton disabled={!isPlaying} />
       </div>
     </div>
