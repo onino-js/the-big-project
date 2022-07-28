@@ -12,13 +12,11 @@ $color-2: rgba(255, 213, 28, 1);
 $color-3: rgba(255, 213, 28, 0.64);
 $color-4: rgba(255, 213, 0, 0.64);
 
-$btn-size: 200px;
+$btn-size: 150px;
+$btn-size-mob: 70px;
 
 .nice-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,10 +39,18 @@ $btn-size: 200px;
   padding: 10px;
   z-index: 10;
   svg {
-    max-height: 100px;
+    height: 100px;
   }
   &:disabled {
-    transform: translateY(80px) scale(0.3);
+    transform: translateY(0px) scale(1);
+  }
+  &:hover,
+  &:focus {
+    color: #313133;
+    transform: scale(1.2);
+    &:disabled {
+      transform: translateY(0px) scale(1);
+    }
   }
 }
 
@@ -61,12 +67,6 @@ $btn-size: 200px;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s ease-in-out 0s;
-}
-
-.nice-play-button:hover,
-.nice-play-button:focus {
-  color: #313133;
-  transform: scale(1.2);
 }
 
 .nice-play-button:hover::before,
@@ -94,6 +94,12 @@ $btn-size: 200px;
   display: none;
 }
 
+.nice-play-button:disabled::after,
+.nice-play-button:disabled::after {
+  animation: none;
+  display: none;
+}
+
 @keyframes ring {
   0% {
     width: $btn-size;
@@ -104,5 +110,19 @@ $btn-size: 200px;
     width: 800px;
     height: 800px;
     opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .nice-play-button {
+    width: $btn-size-mob;
+    height: $btn-size-mob;
+  }
+  .nice-play-button::before {
+    min-width: calc($btn-size-mob + 12px);
+    min-height: calc($btn-size-mob + 12px);
+  }
+  svg {
+    height: 40px;
   }
 }

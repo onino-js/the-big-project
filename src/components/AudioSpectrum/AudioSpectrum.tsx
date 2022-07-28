@@ -2,10 +2,10 @@ import classNames from 'classnames/bind'
 import { useRef, useState } from 'react'
 import styles from './AudioSpectrum.module.scss'
 import { Wave } from '@foobar404/wave'
-import WaveSurfer from 'wavesurfer'
 import { waveAnimations } from './wave-animations'
 import { NicePlayButton } from './NicePlayButton/NicePlayButton'
 import { NextButton } from './NextButton/NextButton'
+import { createWavesurf } from './create-wavesurf'
 
 const cx = classNames.bind(styles)
 
@@ -23,21 +23,9 @@ export const AudioSpectrum: React.FC<Props> = () => {
   const [isPlaying, setIsPlaying] = useState(false)
 
   const createSurf = () => {
-    const wavesurfer = WaveSurfer.create({
-      container: '#waveform',
-      waveColor: '#ffa100ff',
-      progressColor: 'black',
-      backend: 'MediaElement',
-      fillParent: true,
-      minPxPerSec: 10,
-      height: 70,
-      backgroundColor: '#FFFFFF',
-      cursorWidth: 3,
-      cursorColor: 'red',
-      normalize: true,
-    })
+    const wavesurfer = createWavesurf()
     wavesurferRef.current = wavesurfer
-    wavesurfer.load('/theme.mp3')
+    wavesurfer.load('/music/theme.mp3')
     wavesurfer.on('ready', function () {
       play()
       const audioEl = document.getElementsByTagName(
@@ -72,6 +60,7 @@ export const AudioSpectrum: React.FC<Props> = () => {
 
   return (
     <div className={cx('audio-specrtum')}>
+      <div id={'waveform'} className={cx('waveform')}></div>
       <img src="shakka.jpg" alt="shakka" />
       <canvas
         className={cx('canvas-viz')}
@@ -79,11 +68,10 @@ export const AudioSpectrum: React.FC<Props> = () => {
         height={size[0]}
         width={size[1]}
       />
-      <div id={'waveform'} className={cx('waveform')}></div>
       <div className={cx('btn-container')}>
-        <NextButton left />
+        <NextButton left disabled={!isPlaying} />
         <NicePlayButton onClick={createSurf} disabled={isPlaying} />
-        <NextButton />
+        <NextButton disabled={!isPlaying} />
       </div>
     </div>
   )

@@ -15,8 +15,7 @@ $color-4: rgba(255, 213, 0, 0.64);
 $btn-size: 50px;
 
 .next-button {
-  position: absolute;
-  right: 0px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +41,7 @@ $btn-size: 50px;
     max-height: 100px;
   }
   &:disabled {
-    transform: translateY(80px) scale(0.3);
+    visibility: hidden;
   }
   &.left {
     left: 0px;

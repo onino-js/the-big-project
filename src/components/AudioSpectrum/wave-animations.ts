@@ -6,19 +6,27 @@ const globs = [
     diameter: 25,
   },
   {
-    lineWidth: 0.1,
+    lineWidth: 1.5,
+    diameter: 60,
+  },
+  {
+    lineWidth: 1.5,
+    diameter: 60,
+  },
+  {
+    lineWidth: 0.5,
     diameter: 100,
   },
   {
-    lineWidth: 0.1,
+    lineWidth: 0.4,
     diameter: 200,
   },
   {
-    lineWidth: 0.1,
+    lineWidth: 0.3,
     diameter: 300,
   },
   {
-    lineWidth: 0.1,
+    lineWidth: 0.2,
     diameter: 400,
   },
   {
